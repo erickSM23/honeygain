@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'texto1';
+    src: url('../fontes/PlaywriteNZ-VariableFont_wght.ttf') format(opentype);
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url('../fontes/MochiyPopOne-Regular.ttf') format(opentype);
+}
+
+@font-face {
+    font-family: 'texto2';
+    src: url('../fontes/BebasNeue-Regular.otf');
+}
+
+:root {
+    --color1: #F2B705; 
+    --color2: #F29F05; 
+    --color3: #F27405; 
+    --color4: #D95204; 
+    --color5: #A62F03; 
+
+    --font_texto1: 'texto1';
+    --font_texto2: 'texto2';
+    --font_titulo: 'titulos';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+header {
+    height: 260px;
+
+    background-color: var(--color2);    
+}
+
+div#cabeça {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--color2);
+}
+
+div#cabeça > h1 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    font-family: var(--font_titulo);
+    font-weight: normal;
+    font-size: 3em;
+}
+
+div#cabeça > nav {
+    align-self: flex-start;
+}
+
+div#cabeça > nav > a {
+    margin-left: 10px;
+
+    color: black;
+
+    font-size: 23px;
+    text-decoration: underline;
+    font-family: var(--font_texto1);
+    font-weight: 400;
+}
+
+div#cabeça > nav > a:hover {
+    padding: 6px;
+   
+
+    background-color: black;
+    color: var(--color1);
+    border-radius: 30px;
+    
+    text-decoration: none;
+
+    transition: 1s;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte_texto);
+    font-size: 2.8vw;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.603);
+}
+
+section > h1 {
+    padding-bottom: 50px;
+
+    font-family: var(--font_titulo);
+    font-weight: normal;
+}
+
+section > p{
+    padding-bottom: 2em;
+    
+    font-family: var(--font_);
+    font-weight: 200;
+}
+   
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 8px;
+}
+
+section#img1 {
+    background-image: url('../imagens/pexels-alexasfotos-2198671.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#img2 {
+    background-image: url('../imagens/pexels-caio-772571.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center left;
+}
+
+section#img3 {
+    background: url('../imagens/pexels-pixabay-460961.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    padding: 30px;
+
+    background-color: var(--color1);
+
+    text-align: center;
+}
+
+footer > p {
+    font-family: var(--font_titulo);
+    font-size: 2em;
+    font-weight: normal;
+}

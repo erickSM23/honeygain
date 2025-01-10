@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 769px){
+    section#img2 {
+        background-position: center left;
+    }
+    
+    section#img3 {
+        background-position:  left center; 
+    }
+}
