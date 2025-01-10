@@ -57,6 +57,7 @@ div#cabeça > h1 {
     font-family: var(--font_titulo);
     font-weight: normal;
     font-size: 3em;
+    text-transform: uppercase;
 }
 
 div#cabeça > nav {
